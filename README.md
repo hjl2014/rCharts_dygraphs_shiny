@@ -10,5 +10,6 @@ To run this, install the newest version of shiny, the [dimple_layer branch of fo
 #require(devtools)
 #install_github("rCharts","timelyportfolio",ref="dimple_layer")
 
+require(shiny)
 runGitHub("rCharts_dygraphs_shiny","timelyportfolio")
 ```
