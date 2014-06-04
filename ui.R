@@ -1,6 +1,6 @@
 require(shiny)
 require(rCharts)
-require(rChartsDygraph)
+require(rChartsDygraphs)
 
 shinyUI(fluidPage(
   titlePanel('Dygraphs Test in Shiny with rCharts'),

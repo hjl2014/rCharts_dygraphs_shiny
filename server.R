@@ -1,5 +1,5 @@
 require(rCharts)
-require(rChartsDygraph)
+require(rChartsDygraphs)
 require(shiny)
 require(quantmod)
 
