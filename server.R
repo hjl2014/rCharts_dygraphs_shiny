@@ -31,11 +31,11 @@ shinyServer(function(input, output, session){
     dygraph(data=SPY[,c("Date","SPY.Close")], sync=F, crosshair="vertical", legendFollow=TRUE,  height = NULL, width = NULL)
   })
   
-  #output$mygraph2 <- renderChart2({
-  #  dygraph(data=SPY[,c("Date","SPY.Close")], sync=F, crosshair="vertical", legendFollow=TRUE, height = 400, width = 1000)
-  #})
+  output$mygraph2 <- renderChart_nosize({
+    dygraph(data=SPY[,c("Date","SPY.Close")], sync=F, crosshair="vertical", legendFollow=TRUE, height = 400, width = 1000)
+  })
   
-  #output$mygraph3 <- renderChart2({
-  #  dygraph(data=SPY[,c("Date","SPY.Close")], sync=FALSE, crosshair="vertical", legendFollow=TRUE, height = 400, width = 400)
-  #})
+  output$mygraph3 <- renderChart_nosize({
+    dygraph(data=SPY[,c("Date","SPY.Close")], sync=FALSE, crosshair="vertical", legendFollow=TRUE, height = 400, width = 400)
+  })
 })
